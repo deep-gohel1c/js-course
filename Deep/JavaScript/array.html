@@ -1,0 +1,195 @@
+<html>
+
+<head>
+    <title>Array</title>
+</head>
+
+<body>
+
+    <!-- <script>
+
+            var ary = [10,20,30,40,50];
+
+            for(var a=0; a<5; a++){
+
+                document.write(ary[a] + "<br>");
+            }
+
+            var arr = new Array();
+
+            arr[0] = 'deep';
+            arr[1] = 'dev';
+            arr[2] = 'suresh';
+
+            for(var a=0; a<3; a++){
+
+                document.write(arr[a] + "<br>");
+            }
+
+            //document.write("<br>" + arr + "<br>");
+
+
+            var arr = new Array(3);
+
+            for(var a=0; a<3; a++){
+
+                arr[a] = prompt("enter the name")
+            }
+
+            for(var g=0; g<3; g++){
+
+                document.write(arr[g] + "<br>");
+            }
+        </script>
+
+        <script>
+
+            var arr = [
+
+                ['deep',18,'BCA'],
+                ['jay',20,'BBA'],
+                ['dev',19,'BCOM']
+            ];
+
+            for(var i=0; i<arr.length; i++){
+
+                document.write(arr[i] + "<br>");
+            }
+
+            for(var a=0; a<3; a++){
+
+                for(var b=0; b<3; b++){
+
+                document.write(arr[a][b] + "<br>");
+
+                }
+            }
+
+        </script> -->
+
+    <script>
+
+        //Array function
+
+        //modify-delete
+
+        var a = ['jack', 'john', 'deo', 'herry'];
+
+        document.write(a + "<br>");
+
+        a[0] = 'deep';
+
+        document.write(a + "<br>");
+
+        delete a[1];
+
+        document.write(a + "<br>");
+
+
+        //sort-reverse
+
+        var arr = ['zeel', 'aman', 'neha', 'jay'];
+
+        document.write(arr + "<br>");
+
+        arr.sort();
+
+        document.write("After sorting:" + arr + "<br>");
+
+        arr.reverse();
+
+        document.write("After reverse sorting:" + arr + "<br>");
+
+
+        //pop-push
+
+        var no = [1, 2, 3, 4, 5];
+
+        no.pop();
+
+        document.write(no + "<br>");
+
+        no.push("ram", 6);
+
+        document.write(no + "<br>");
+
+        //shift-unshift
+
+        var no = [1, 2, 3, 4, 5];
+
+        no.shift();
+
+        document.write(no + "<br>");
+
+        no.unshift('kevin');
+
+        document.write(no + "<br>");
+
+
+        //concat-join
+
+        var a = ['hii', 'hello', 'good'];
+
+        var b = a.concat(4, 5, 6, 7);
+
+        document.write(b + "<br>");
+
+        var c = b.join("-");
+
+        document.write(c + "<br>");
+
+        //slice-splice
+
+        var a = ["dev", "deep", "rahul", "manoj"];
+
+        var c = a.slice(1, 3);
+
+        document.write(c + "<br>");
+
+        var a = ["dev", "deep", "rahul", "manoj"];
+
+        a.splice(3, 0, "sam", "karan");
+
+        document.write(a + "<br>");
+
+        //isArray()
+
+
+        var a = ['deep', 'dev', 'john'];
+        var b = "herry";
+        var c = 25;
+
+        var d = Array.isArray(a);
+
+        document.write(d + "<br>");
+
+
+
+
+
+
+
+    </script>
+
+
+    <script>
+
+
+        var arr = [
+            ['name:deep', 'age:18', 'course:BCA'],
+            ['name:dev', 'age:20', 'course:BBA'],
+            ['name:deep', 'age:21', 'course:CA'],
+        ];
+
+        for (var i = 0; i < arr.length; i++) {
+
+            document.write(arr[i] + "<br>");
+        }
+        
+
+
+        
+    </script>
+</body>
+
+</html>

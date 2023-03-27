@@ -1,0 +1,400 @@
+<html>
+
+    <head>
+        <title>flow</title>
+    </head>
+
+    <body>
+        
+        <!-- if statement -->
+
+        <!-- <script>
+
+            var a = 20;
+            var b = 10;
+
+            if(a > b){
+
+                document.write("Greater");
+            }
+        </script>
+
+        <h1>Hello World!!</h1>
+
+        <p id="demo">Good Evening...</p>
+
+        <script>
+            if(new Date().getHours() < 18){
+
+                document.getElementById("demo").innerHTML = "Good morning";
+            }
+
+        </script> 
+
+        if-else statement
+
+        <h1>Hello World!!</h1>
+
+        <p id="demo"></p>
+
+        <script>
+
+            var a = 20;
+            var b = 50;
+
+
+            if(a < b){
+
+                document.write("Greater");
+            }
+            else{
+                document.write("lessthan");
+            }
+
+            var hour = new Date().getHours();
+            var answer;
+
+           
+
+            if(hour < 18){
+
+                answer = "Good day";
+            }
+            else{
+
+                answer = "Good morning";
+            }
+
+            document.getElementById("demo").innerHTML = answer;
+
+
+            
+            
+        </script> 
+
+
+
+        if-else-if 
+
+
+        <h1>JavaScript</h1>
+
+        <p id="demo"></p>
+
+        <script>
+
+            var hour = new Date().getHours();
+            var answer;
+
+            if(hour > 20){
+
+                answer = "Good Night";
+            }
+            else if(hour > 16){
+
+                answer = "Good evening";
+            }
+            else if(hour > 14){
+                answer = "Good morning";
+            }
+
+            else{
+
+                answer = "hello";
+            }
+
+            document.getElementById("demo").innerHTML = answer;
+
+
+           
+        </script>
+
+        <script>
+
+          var marks = 100;
+
+          if(marks > 70){
+
+            document.write("Distinction");
+          }
+          else if(marks > 60){
+            document.write("First class");
+          }
+          else if(marks > 50){
+            document.write("Second class");
+          }
+          else if(marks > 40){
+            document.write("pass class");
+          }
+          else{
+           
+            document.write("Fail");
+          }
+        </script>
+
+
+
+
+        switch-case
+
+        <h1>Calculator</h1>
+
+            <script>
+
+                var a = 50;
+                var b = 25;
+               
+
+                var operation = "Sub";
+
+                switch(operation){
+
+                    case "Add":
+                        document.write("Addition is:",a + b);
+                        break;
+
+                    case "Sub":
+                        document.write("Subtraction is:",a - b);
+                        break;
+
+                    case "Multi":
+                        document.write("Multiplication is:",a * b);
+                        break;
+
+                    case "Division":
+                        document.write("Addition is:",a / b);
+                        break;
+
+                    default:
+                        document.write("Select valid option");
+                }
+            </script>
+
+
+            While loop 
+
+
+            <script>
+
+                var i = 1;
+
+                while(i <= 10){
+                    document.write("number is:",i);
+                    document.write("<br>");
+                    i++;
+                }
+
+                var j = 10;
+
+                while(j > 1){
+                    document.write("number is:",j);
+                    document.write("<br>");
+                    j--;
+
+                }
+            </script>
+
+            Do while
+
+
+            <script>
+
+                var a = 1;
+
+                do{
+
+                    document.write("number is:",a);
+                    document.write("<br>");
+                    a++;
+                }
+                while(a <= 10)
+            </script>
+
+            For loop
+
+            <h1>JavaScript</h1>
+
+            <p id="demo"></p>
+
+            <script>
+                var text= " ";
+
+                    for(var i=1; i<=10; i++){
+
+                        text += "The number is:" + i + "<br>";
+                    }
+
+                    document.getElementById("demo").innerHTML = text;
+
+
+                    for(var i=1; i<=5; i++){
+
+                        document.write(i);
+                        document.write("<br>");
+
+                    }
+
+
+            </script>
+
+
+            Odd/Even
+
+
+            <script>
+
+                for(var i=1; i<=10; i++){
+
+                    if(i % 2 == 0){
+
+                        document.write(i + "<br>");
+                    }
+                }
+            </script>
+
+            <script>
+
+                for(var i=1; i<=100; i=i+10){
+
+                    for(var j=i; j<i+10; j++){
+                    
+                        document.write(j + " ");
+                    }
+                    document.write("<br>");
+                }
+            </script>-->
+
+            <script>
+
+                for(var a = 1; a <=  5; a++){
+                    for(b = 1; b <= a; b++){
+                        document.write(b + " ");
+                    }
+                    document.write("<br>");
+                }
+
+                document.write("<br>");
+
+                for(a = 1; a <=5; a++){
+
+                    for(b = 1; b <=a; b++){ 
+
+                        document.write(a + " ");
+                    }
+
+                    document.write("<br>");
+                }
+
+                document.write("<br>");
+
+                for(a = 5; a >=1; a--){
+
+                    for(b = 1; b <=a; b++){
+
+                        document.write(a + " ");
+                    }
+
+                    document.write("<br>");
+                }
+
+                document.write("<br>");
+
+
+                for(a = 5; a >=1; a--){
+
+                    for(b = a; b >=1; b--){
+
+                        document.write(b + " ");
+                    }
+
+                    document.write("<br>");
+                }
+
+
+                var a = 50;
+                var b = 20;
+                var c;
+
+                (a > b) ? c = "True" : c = "False"; 
+                document.write(c + "<br>");
+                
+            </script>
+
+
+                <!-- for in -->
+                
+                <script>
+
+                    var salaries = {
+
+                        deep: 30000,
+                        jay: 25000,
+                        priya: 20000
+
+                    }
+
+//                    for(let i in salaries){
+                        for(var i=0;i<salaries.legth;i++){
+
+                        let salary = "$" + salaries[i];
+
+                        document.write(`${i} : ${salary}` + "<br>");
+                    }
+
+                    const name = ["facebook", "google", "instagram"];
+
+                    for (const key of name){
+
+                        document.write(key + "<br>");
+                    }
+
+                    const symbol = {
+
+                        fb: "facebook",
+                        ig: "instagram",
+                        yt: "youtube"
+                    }
+
+                    for(const sb in symbol){
+
+                        document.write(`key is: ${sb} value is: ${symbol[sb]}` + "<br>");
+                    }
+
+                    document.write('<br>');
+
+                    const student = {
+
+                        name: "Deep",
+                        age: 18,
+                        class:12
+                    }
+
+                        for(const st in student){
+
+                            document.write(`key is: ${st} value is:${student[st]}` + "<br>");
+                        }
+                </script>
+
+                <!-- foreach -->
+
+
+                <script>
+
+                    var std = [
+
+                    ['name:deep', 'age:18', 'course:BCA'],
+                    ['name:dev', 'age:20', 'course:BBA'],
+                    ['name:deep', 'age:21', 'course:CA'],
+                    ];
+
+                    std.forEach(function(value,i) {
+
+                        document.write(value + " " + i + "<br>");
+                        
+                    });
+                </script>
+        
+            
+
+    </body>
+</html>

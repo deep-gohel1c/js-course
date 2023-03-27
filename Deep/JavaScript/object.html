@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            object
+        </title>
+    </head>
+
+    <body>
+        
+        <script>
+
+            var car = {
+
+                type: "BMW",
+                model: "520d",
+                color: "white",
+
+                hello(){
+                        document.write(this.type);
+                }
+            }
+
+            car.hello();
+            document.write("<br>");
+            document.write("Car type: " + car.type + " Car model: " + car.model + " Car color: " + car.color + "<br>");
+        </script>
+
+        <script>
+
+            var a = {
+
+                fname: 'Deep',
+                lname: 'Gohel',
+                age: 22,
+                movie: ['race','dhoom','singham'],
+                salary: function(salary){
+
+                    return salary;
+                },
+
+                fullname: function(){
+
+                    return this.fname + " " + this.lname;
+                },
+                living: {
+
+                    city: "ahmedabad",
+                    country: "india"
+                }
+            }
+
+                document.write(a.movie + "<br>");
+                document.write(a.salary(20000) + "<br>");
+                document.write(a.fullname() +  "<br>");
+                document.write(a.living.city + "<br>");
+        </script>
+
+
+        <script>
+
+            var person = new Object();
+
+            person.fname = 'deep';
+            person.lname = 'gohel';
+            person.age = 25;
+
+            document.write(person.fname);
+        </script>
+
+        <script>
+
+            var student = [
+
+                {name: 'deep', age: 22},
+                {name: 'dev', age: 23},
+                {name: 'rahul', age: 25},
+            ];
+
+           for(var a=0; a < student.length; a++){
+
+            document.write("Student name:" + student[a].name + " age:" + student[a].age + "<br>");
+           }
+        </script>
+    </body>
+</html>
