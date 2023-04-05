@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Ex-6</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        function difference() {
+
+            let a = [0, 1, 2, 3];
+            let b = [3, 4, 5];
+
+            let c = a.concat(b);
+            document.write(" union_array: " + c);
+
+            document.write("<br>");
+
+            for (let i = 0; i < a.length; i++) {
+
+                for (j = 0; j < b.length; j++) {
+
+                    if (a[i] == b[j]) {
+
+                        document.write(a[i]);
+                    }
+
+                }
+
+
+            }
+
+            document.write("<br>");
+
+            for (let i = 0; i < a.length; i++) {
+
+                for (j = 0; j < b.length; j++) {
+
+                    if (a[i] == b[j])
+                        break;
+                }
+
+                if (j == b.length) {
+
+                    document.write(a[i]);
+                }
+            }
+
+            document.write("<br>");
+
+
+            for (let i = 0; i < b.length; i++) {
+
+                for (j = 0; j < a.length; j++) {
+
+                    if (a[j] == b[i])
+                        break;
+                }
+
+                if (j == a.length) {
+
+                    document.write(b[i]);
+                }
+            }
+
+
+        }
+
+
+
+
+
+        difference();
+
+
+    </script>
+</body>
+
+</html>

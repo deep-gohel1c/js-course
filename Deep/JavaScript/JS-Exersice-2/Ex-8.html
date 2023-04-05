@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>javascript difference between two dates in years months days</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        d1 = prompt()
+        d2 = prompt()
+
+        if (d1.includes('-') || d2.includes('-')) {
+
+            d3 = d1.split('-')
+            d4 = d2.split('-')
+
+            d3.reverse();
+            d4.reverse();
+        } else {
+
+            d3 = d1.split('/')
+            d4 = d2.split('/')
+           
+            d3.reverse();
+            d4.reverse();
+            
+        }
+
+        date1 = new Date(d3.join('/'));
+        date2 = new Date(d4.join('/'));
+        console.log(date1, date2);
+
+        day = Math.abs(date1 - date2) / (24 * 3600 * 1000);
+        year = Math.floor(day / 365);
+        month = Math.floor(day / 30.416);
+        hour = day * 24;
+        min = hour * 60;
+        week = Math.floor(day / 7);
+
+        let ans = `${year} years ${Math.floor((day % 365) / 30.416)} months ${Math.floor((day % 365) % 30.416)}days`;
+
+        console.log(ans);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

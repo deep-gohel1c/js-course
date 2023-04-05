@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Ex-12</title>
+</head>
+
+<body>
+
+    <script>
+
+        let str = prompt("enter the string");
+
+        let len = prompt("enter length");
+
+        
+
+        function strchop(str, len) {
+
+           return (len > 0) ?
+
+                str.match(new RegExp('.{1,' + len +'}' , 'g')) : [str]
+
+
+        }
+
+        let ans = strchop(str,len);
+        document.write(ans);
+
+
+       
+    </script>
+</body>
+
+</html>

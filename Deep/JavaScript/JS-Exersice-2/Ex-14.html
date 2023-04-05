@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Ex-14</title>
+</head>
+
+<body>
+
+    <script>
+
+        let student = [
+
+            { id: 1, name: 'deep', age: 22 },
+            { id: 2, name: 'atul', age: 29 },
+            { id: 3, name: 'rahul', age: 28 },
+            { id: 4, name: 'zeel', age: 28 },
+            { id: 5, name: 'nehal', age: 27 },
+            { id: 6, name: 'krupen', age: 23 },
+            { id: 7, name: 'meet', age: 21 },
+            { id: 8, name: 'jay', age: 25 },
+            { id: 9, name: 'neha', age: 19 },
+            { id: 10, name: 'priya', age: 30 },
+        ];
+
+        student.sort(function (a, b) {
+
+            return a.age - b.age
+        });
+
+
+        function display() {
+
+            for (i = 0; i < student.length; i++) {
+
+                document.write("student age:" + student[i].age + "<br>");
+            }
+        }
+
+        display();
+
+        function strrev(x,y){
+
+            if(x.name > y.name){
+                return -1;
+            }
+
+            if(x.name < y.name){
+                return 1;
+            }
+
+            return 0;
+
+        }       
+
+        let rev = student.sort(strrev);
+
+        for(i = 0 ; i < student.length ; i++){
+
+            document.write("student age: " + rev[i].name + "<br>");
+        }
+
+
+       
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

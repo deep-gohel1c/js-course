@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Ex-8</title>
+</head>
+
+<body>
+
+    <script>
+
+        function num_string_range(start, end, step) {
+            var range = [];
+            
+             if (typeof start == "string") {
+
+                if (start.length != 1 || end.length != 1) {
+                    throw TypeError("Strings with one character are supported.");
+                }
+
+                start = start.charCodeAt(0);
+                end = end.charCodeAt(0);
+
+                while (step > 0 ? end >= start : end <= start) {
+                    range.push(String.fromCharCode(start));
+                    start += step;
+                }
+
+            }
+
+           
+
+            return range;
+
+        }
+
+        document.write(num_string_range('a', "z", 2));
+       
+    </script>
+</body>
+
+</html>

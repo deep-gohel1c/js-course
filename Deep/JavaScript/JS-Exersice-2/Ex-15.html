@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let std = [
+
+            { name: "Jack", age: 23 },
+            { name: "Sam", age: 12 },
+            { name: "Max", age: 20 },
+        ];
+
+        
+        let z = prompt("enter insert or delete");
+
+        if (z == "delete") {
+
+            let x = prompt("Enter position you want to delete");
+            x--;
+            str = del(x);
+
+
+            function del(x) {
+
+                for (let i = 0; i < std.length; i++) {
+
+                    if (x < std.length) {
+
+                        delete std[x];
+                    }
+                    else {
+
+                        alert("position does not exist:");
+                    }
+                }
+
+                for (i in std) {
+
+                    document.write("student name:" + std[i].name + "  student age:" + std[i].age + "<br>");
+                }
+
+            }
+
+        } else if (z == "insert") {
+
+            var pos = prompt("Enter the position");
+            pos--;
+
+            let name = prompt("Enter Name:");
+
+            let age = prompt("Enter Age:");
+
+
+            function ins(pos, k, { n, a }) {
+
+                const add = std.splice(pos, k, { name: n, age: a });
+
+                for (i in std) {
+
+                    document.write("student name:" + std[i].name + "  student age:" + std[i].age + "<br>");
+                }
+
+            }
+
+            ins(pos, 0, { n: name, a: age });
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Ex-7</title>
+</head>
+
+<body>
+
+    <script>
+
+        let n = prompt("enter date");
+
+        function month(n) {
+
+            let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            if (n.includes("-")) {
+                let splitted_date = n.split("-");
+                return months[(splitted_date[1]) - 1];
+            } else {
+                let splitted_date1 = n.split("/");
+                return months[(splitted_date1[1]) - 1];
+            }
+        }
+
+        document.write(month(n));
+
+        
+    </script>
+</body>
+
+</html>
